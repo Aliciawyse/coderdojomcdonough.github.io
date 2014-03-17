@@ -5,6 +5,8 @@ date: 2014-03-15 23:35
 comments: false
 sharing: true
 footer: true
+resource: true
+categories: [sessions]
 alias: /session-outline
 ---
 
