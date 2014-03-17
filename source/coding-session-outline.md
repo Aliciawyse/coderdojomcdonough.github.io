@@ -5,6 +5,7 @@ date: 2014-03-15 23:35
 comments: false
 sharing: true
 footer: true
+alias: /session-outline
 ---
 
 # Thanks for attending CoderDojo McDonough!
