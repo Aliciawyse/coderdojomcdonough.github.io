@@ -28,6 +28,7 @@ ul {
     overflow: hidden;
     background-color: white;
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -41,8 +42,13 @@ li {
 
 }
 
+nav li:nth-child(7){
+	    border-right: none;
+}
+
 nav li:last-child{
 	    border-right: none;
+	    display: none;
 }
 
 li a, .dropbtn {
@@ -51,7 +57,7 @@ li a, .dropbtn {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size:100%;
+    font-size:90%;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -140,4 +146,39 @@ footer {
 
 footer img{
 	margin:2%;
+}
+
+footer div{
+    font-size: 225%;
+}
+
+footer div i {
+    padding: .5%;
+    color: #222;
+}
+
+@media screen and (max-width:1288px) {
+    nav li:not(:first-child) {display: none;}
+  nav li.icon {
+    display: inline-block;
+    margin-left:70%;
+  }
+}
+
+@media screen and (max-width:1288px) {
+  nav.responsive {position: relative;}
+  nav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  nav.responsive li {
+    float: none;
+    display: inline;
+  }
+  nav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }

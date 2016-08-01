@@ -4,15 +4,15 @@
 	<meta charset="utf-8">
 	<title>CoderDojo McDonough</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet/style.css">
-	<link rel="stylesheet" type="text/css"
-      href="https://fonts.googleapis.com/css?family=Nunito">
-
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito">
+	<script src="https://use.fontawesome.com/eabb9beda7.js"></script>
 </head>
 
 <body>
 	<header>
 		<img class="center-block" src="stylesheet/banner.jpg" alt="banner-logo">
-		<nav>
+		
+		<nav class= topnav id= myTopnav>
 			<ul>
 				<li><a href="">About Us</a></li>
 				<li><a href="">FAQs</a></li>
@@ -32,14 +32,12 @@
 				<li>
 					<a href="">Directions</a>
 				</li>
-				<li>
-					<a href="">Contact</a>
+				<li class="icon">
+					<a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
-
-
 
 	<section id= "firstsection">
 		
@@ -47,6 +45,7 @@
 		
 		<h2 class="firstsectiontext">What is CoderDojo McDonough?</h2>
 			<p class="firstsectiontext">CoderDojo McDonough is a free and open non-profit group founded to teach youth (ages 7-17) to code. Our sessions are located at the McDonough Public Library and are open to all Henry County youth and parents/guardians.</p>
+			<a class="firstsectiontext" href="mailto:info@coderdojohenry.com">Contact Us!</a>
 	
 	</section>
 	
@@ -54,24 +53,40 @@
 		<section id= "secondsection">
 			<h2>Register for a Session</h2>
 				<p>At a CoderDojo event the only limit on what you can do is your imagination. You can learn new programming languages, create apps for your computer, tablet or phone, build websites, make games and much, much more. There is only one rule: “Above all; Be cool”.</p>
-					<a href="#">Register Now!</a>
+					<a href="http://www.meetup.com/CoderDojoMcDonough/">Register Now!</a>
 		</section>
 		
 		<section id= "thirdsection">
 			<h2>Mentor Signup</h2>
 				<p>The driving force behind CoderDojo McDonough are the volunteers and mentors from technology and education backgrounds who wish to inspire the next generation of digital content makers.</p>
-					<a href="#">Mentor Now!</a>
+					<a href="https://github.com/CoderDojoMcDonough/Documentation/blob/master/new_mentor_instructions.md#_=_">Mentor Now!</a>
 		</section>
 	</div>
 
 	<footer>
-		
 		<h2>Supported By:</h2>
-			<img src= "stylesheet/librarylogo.jpeg" alt="liblogo">
-			<img src= "stylesheet/simplephotologo.jpeg" alt="simplelogo">
-			<img src= "stylesheet/learnmodlogo.jpeg" alt="modlogo">
-			<img src= "stylesheet/verisononelogo.jpeg" alt="verisonlogo">
+		<img src= "stylesheet/librarylogo.jpeg" alt="liblogo">
+		<img src= "stylesheet/simplephotologo.jpeg" alt="simplelogo">
+		<img src= "stylesheet/learnmodlogo.jpeg" alt="modlogo">
+		<img src= "stylesheet/verisononelogo.jpeg" alt="verisonlogo">
+		<div>
+			<a href="https://github.com/CoderDojoMcDonough"><i class="fa fa-github" aria-hidden="true"></i></a>
+			<a href="https://www.facebook.com/CoderDojoMcDonough/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/CoderDojoHenry"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		</div>
 	</footer>
 	
 </body>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
 </html>
