@@ -35,6 +35,11 @@ header img {
     height: 274px;
 }
 
+.gallery img {
+    width: 383px;
+    height: 274px;
+}
+
 .center-block {
     float: none;
     text-align: center;
