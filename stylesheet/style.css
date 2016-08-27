@@ -19,9 +19,6 @@ p {
     -o-background-size: cover !important;
     background-size: cover !important;
     background-position: 50% 0;
-    background-repeat: no-repeat;
-    z-index: 1;
-    position: relative;
     background-color: #54A2EA;
     padding-top: 2%;
 }
@@ -31,6 +28,7 @@ p {
     padding: 80px 0;
     margin-top: #100px;
 }
+
 header img {
     width: 90%;
 }
@@ -54,6 +52,10 @@ header {
 
 .new_section {
     margin-top: -60px;
+}
+
+.mentor {
+    float:left;
 }
 
 .social_buttons {
@@ -84,7 +86,30 @@ li.github {
 li.twitter {
     background:#52c8ff;
 }
+
 .sponsors img{
     margin-right: 15px;
     margin-bottom: 2%;
+}
+
+.footer {
+    font-size: 90%;
+    padding-bottom: .5%;
+}
+
+.bg-grey {
+    background-color: #efefef;
+}
+
+.sub-footer {
+    padding-top:1%;
+    font-size:80%;
+    background-color:#d0d4d8;
+    margin-bottom:-90px;
+}
+
+@media screen and (max-width: 800px){
+    .footer {
+        text-align: center;
+    }
 }
