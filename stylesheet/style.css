@@ -57,6 +57,11 @@ header {
     float:left;
 }
 
+dd {
+    margin-top: 1%;
+    margin-bottom: 6%;
+}
+
 .social_buttons {
     list-style-type:none;
     padding-left:0px;
@@ -127,5 +132,6 @@ li.twitter {
     .visible-xs {
         display: block!important;
         background-color:#d0d4d8;
+        padding-bottom:2%;
 }
 }
